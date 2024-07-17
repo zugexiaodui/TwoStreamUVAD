@@ -54,6 +54,8 @@
 ├── save.results
 ├── save.tbxs
 ```
+[I3D_8x8_R50_pre.pth - GoogleDrive](https://drive.google.com/file/d/13u9d1lzvUa85G4OcG6zAsZsK6vcKFw33/view?usp=drive_link)
+
 运行bash脚本时进入release1目录下，通过`bash **.sh`运行。
 
 本仓库主要以ShanghaiTech(ST)和Avenue为主说明运行方法，其中的超参数可能不是最优的设置。Corridor数据集由于数量较大，作者在实验时单独针对该数据集做了数据加载方面的修改优化，读者如要实验根据需要自己修改代码，注意Corridor上默认使用的3个crop是手动选取的3个位置，可参考论文中的说明，本仓库未提供该处理步骤，在不使用手动3 crop的情况下，选择的是15(5\*3)个480\*480的crop区域。
